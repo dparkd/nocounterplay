@@ -398,6 +398,9 @@ h1 {
       font-size: 20px; } }
 
 h2 {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
   color: white;
   margin-bottom: 0;
   margin-top: 0;
@@ -428,3 +431,6 @@ h2 {
 
 #big img {
   width: 75%; }
+  @media screen and (max-width: 480px) {
+    #big img {
+      width: 100%; } }
