@@ -388,14 +388,29 @@ body {
   text-rendering: geometricPrecision; }
 
 h1 {
-  color: white;
-  font-size: 80px;
+  color: black;
+  font-size: 20px;
   margin-top: 0;
   position: fixed;
-  top: 50px; }
+  top: 80px; }
+  h1 span {
+    background: white;
+    min-width: 100px;
+    padding: 20px 40px;
+    border: 4px solid white; }
   @media screen and (max-width: 480px) {
     h1 {
-      font-size: 20px; } }
+      font-size: 15px; }
+      h1 span {
+        padding: 10px 20px; } }
+
+#name {
+  color: white;
+  right: 50px; }
+  #name a {
+    color: white; }
+  #name span {
+    background: black; }
 
 h2 {
   position: fixed;
@@ -419,18 +434,15 @@ h2 {
 .work {
   text-align: center;
   padding-top: 125px; }
-  .work .piece {
-    margin-bottom: 50px;
-    display: block; }
   .work img {
-    width: 40%;
-    display: inline-block; }
+    width: 400px;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    border: 4px solid white;
+    transition: 0.5s all ease-in-out; }
     @media screen and (max-width: 480px) {
       .work img {
+        position: relative;
+        left: 0;
         width: 100%; } }
-
-#big img {
-  width: 75%; }
-  @media screen and (max-width: 480px) {
-    #big img {
-      width: 100%; } }
